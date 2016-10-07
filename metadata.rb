@@ -1,4 +1,4 @@
-name             'hello-world-config'
+name             'helloworld-chef-cookbooks'
 maintainer       'AT&T'
 maintainer_email 'sd378r@intl.att.com'
 license          'All rights reserved'
