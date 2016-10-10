@@ -4,7 +4,15 @@
 ################
 # 
 ######
-['hello_world'].each do |file|
+directory "#{node['hello_world_config_path']}" do 
+  owner 'jboss' 
+  group 'jboss' 
+  mode '0755' 
+  recursive true 
+  action :create 
+end
+
+['hello-world-message.txt'].each do |file|
   template "#{node['hello_world_config_path']}#{file}" do
     source "hello-world/#{file}"
     owner "jboss"
