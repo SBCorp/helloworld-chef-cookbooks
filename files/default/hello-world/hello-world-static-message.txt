@@ -1,1 +1,1 @@
-<%= @var["message"] %>
+Static file
